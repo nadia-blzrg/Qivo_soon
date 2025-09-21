@@ -13,11 +13,11 @@
     }
 
     body {
-      /* Combinaison de gradient et image */
-      background: 
-                  url('https://raw.githubusercontent.com/nadia-blzrg/i-YusrImages/refs/heads/main/qoon_qivo.jpg') 
+      /* Image entière sans zoom */
+      background: url('https://raw.githubusercontent.com/nadia-blzrg/i-YusrImages/refs/heads/main/qoon_qivo.jpg') 
                   no-repeat top center;
-      background-size: cover; /* couvre tout l'écran */
+      background-size: contain; /* affiche toute l'image, pas de zoom */
+      background-color: #000; /* pour les zones vides si l'image ne couvre pas tout l'écran */
       color: white;
       display: flex;
       justify-content: center;
