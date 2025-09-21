@@ -13,11 +13,11 @@
     }
 
     body {
-      /* Combinaison de gradient et image */
-      background: 
-                  url('soon.svg') 
-                  no-repeat top center;
-      background-size: cover; /* couvre tout l'écran */
+      /* Image réduite et centrée */
+      background: url('soon.svg') no-repeat center center;
+      background-size: contain; /* l'image garde ses proportions */
+      background-color: #000; /* pour combler les zones vides */
+      
       color: white;
       display: flex;
       justify-content: center;
@@ -25,7 +25,22 @@
       font-size: 3rem;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
+
+    /* Responsive texte */
+    @media (max-width: 768px) {
+      body {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
-
+<body>
+  <div>Soon ...</div>
+</body>
 </html>
