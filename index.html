@@ -5,37 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coming Soon</title>
   <style>
-    /* Import de la font depuis le dossier local */
-    @font-face {
-      font-family: 'Monda';
-      src: url('Monda.woff') format('woff'),  /* Modern browsers */
-           url('Monda.ttf') format('truetype'); /* Safari, Android, iOS */
-      font-style: normal;
-      font-weight: normal;
-      text-rendering: optimizeLegibility;
-    }
-
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
-      font-family: 'Monda', Arial, Helvetica, sans-serif; /* Utilisation de la font */
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
+      /* Combinaison de gradient et image */
+      background: 
+                  url('https://raw.githubusercontent.com/nadia-blzrg/i-YusrImages/refs/heads/main/qoon_qivo.jpg') 
+                  no-repeat top center;
+      background-size: cover; /* couvre tout l'écran */
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: url('https://raw.githubusercontent.com/nadia-blzrg/i-YusrImages/refs/heads/main/gradient.svg') 
-                  no-repeat center center;
-      background-size: cover;
-      color: white;
       font-size: 3rem;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
   </style>
 </head>
-<body>
-  <div>Soon ...</div>
-</body>
+
 </html>
